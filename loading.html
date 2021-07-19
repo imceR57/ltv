@@ -38,5 +38,11 @@
     <footer-page></footer-page>
     <script src="./components/header.js" ></script>
     <script src="./components/footer.js" ></script>
+    <script>
+        var result = JSON.parse(localStorage.getItem("result"));
+        setTimeout(function(){
+                result ? window.location.href = 'foundResult.html' : window.location.href = 'noResult.html'
+         }, 1000);
+    </script>
 </body>
 </html>

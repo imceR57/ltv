@@ -1,3 +1,11 @@
+const userDB = {
+    name: "John",
+    surname: "Smith",
+    address: "New York",
+    email: "john@smith.com",
+    phone: "123456789",
+};
+
 let searchType = "email";
 const headerSearchError = {
     email: "Please enter a valid email address",
@@ -9,18 +17,6 @@ function getSearchType(e) {
 }
 
 function validatePhone(phoneNumber) {
-    /* Valid phone number format 
-        (123) 456-7890
-        +(123) 456-7890
-        +(123)-456-7890
-        +(123) - 456-7890
-        +(123) - 456-78-90
-        123-456-7890
-        123.456.7890
-        1234567890
-        +31636363634
-        075-63546725
-    */
     const phoneFormat = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
     return phoneFormat.test(phoneNumber);
 }
@@ -70,5 +66,11 @@ go.addEventListener("click", function () {
     } else {
         searchInput.classList.remove("error");
         searchInputWrapper.classList.remove("error");
+        if (searchValue === userDB.email || searchValue === userDB.phone) {
+            localStorage.setItem("result", true);
+        } else {
+            localStorage.setItem("result", false);
+        }
+        window.location.href = "loading.html";
     }
 });
