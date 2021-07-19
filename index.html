@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cosmic Task</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <header-page></header-page>
+            <search-person
+                headText="Start Your Search!"
+                headDescription="Look up for people’s name, photos and online profiles with their email<br> address or phone number. See what you find!"
+                btnFooterSearch='header-search-btn-go'
+            ></search-person>
+            <div class="header-footer">
+                <img src="assets/img/lock.svg" alt="Lock Icon"/>
+                <span>
+                    People in the search won't be notified.
+                </span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main-header">
+                <h1>Here’s How It Works</h1> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut  aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="main-numbers">
+                <div class="main-numbers-left-side">
+                    <card-number number='1'></card-number>
+                    <card-number number='2'></card-number>
+                    <card-number number='3'></card-number>
+                </div>
+                <div class="main-numbers-right-side">
+                    <card-number number='4'></card-number>
+                    <card-number number='5'></card-number>
+                    <card-number number='6'></card-number>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer-page></footer-page>
+    <script src="./components/cardNumber.js" ></script>
+    <script src="./components/search.js" ></script>
+    <script src="./components/header.js" ></script>
+    <script src="./components/footer.js" ></script>
+    <script src="./script.js"></script>
+</body>
+</html> 

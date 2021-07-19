@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Found Result</title>
+    <style>
+        main,
+        header {
+            padding: 0px;
+        }
+        search-person {
+            width: 70%;
+        }
+        @media (max-width: 900px) {
+            search-person {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <header-page></header-page>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="found-result-wrapper">
+                <h1>
+                    1 Results
+                </h1>
+                <h4>Look at the result below to see the details of the person you’re searched for.</h4>
+                <div class="found-result-card">
+                    <div class="user-icon">
+                        <div class="user-circle-icon-wrapper">
+                            <div class="user-circle">
+                                <img src="./assets/img/icn_person.svg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-details">
+                        <div class="user-bio">
+                            <h2>John Smith</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="user-info">
+                            <div class="user-data">
+                                <h2>Address</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                            <div class="user-data">
+                                <h2>Phone Numbers</h2>
+                                <p>
+                                    (555) 555-5555
+                                </p>
+                                <p>(555) 555-5555</p>
+                                <p>(555) 555-5555</p>
+                            </div>
+                        </div>
+                        <div class="user-info">
+                            <div class="user-data">
+                                <h2>Email</h2>
+                                <p>
+                                    loremipsum@dolorsit.com
+                                </p>
+                            </div>
+                            <div class="user-data">
+                                <h2>Relatives</h2>
+                                <p>
+                                    Jane Smith
+                                </p>
+                                <p>John Smith Jr</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="result-search-footer-wrapper">
+            <search-person
+                headText="Can’t Find The Right Person?"
+                headDescription="Try Again - Make a new search"
+            ></search-person>
+        </div> 
+    </main>
+    <footer-page></footer-page>
+    <script src="./components/search.js" ></script>
+    <script src="./components/header.js" ></script>
+    <script src="./components/footer.js" ></script>
+    <script src="./script.js"></script>
+</body>
+</html>
